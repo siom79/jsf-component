@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<facelet-taglib xmlns="http://java.sun.com/xml/ns/javaee">
+	<namespace>http://martinsdeveloperworld.wordpress.com</namespace>
+	<tag>
+		<tag-name>helloWorld</tag-name>
+		<component>
+			<component-type>HelloWorld</component-type>
+		</component>
+	</tag>
+</facelet-taglib>
