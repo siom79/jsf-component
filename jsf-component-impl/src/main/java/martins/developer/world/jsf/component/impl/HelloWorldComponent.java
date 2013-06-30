@@ -2,11 +2,14 @@ package martins.developer.world.jsf.component.impl;
 
 import java.io.IOException;
 
+import javax.faces.application.ResourceDependencies;
+import javax.faces.application.ResourceDependency;
 import javax.faces.component.FacesComponent;
 import javax.faces.component.UIOutput;
 import javax.faces.context.FacesContext;
 import javax.faces.context.ResponseWriter;
 
+@ResourceDependencies({ @ResourceDependency(name = "css/jsf-component.css", target = "head") })
 @FacesComponent("HelloWorld")
 public class HelloWorldComponent extends UIOutput {
 	private static final String COMPONENT_FAMILY = "martins.developer.world.jsf.component.helloWorld";
@@ -24,6 +27,7 @@ public class HelloWorldComponent extends UIOutput {
 	public void encodeBegin(FacesContext context) throws IOException {
 		ResponseWriter writer = context.getResponseWriter();
 		writer.startElement("span", this);
+		writer.writeAttribute("class", "helloWorldClass", "");
 		writer.writeText(String.format("Hello %s %s!", getFirstName(), getLastName()), "");
 		writer.endElement("span");
 	}
