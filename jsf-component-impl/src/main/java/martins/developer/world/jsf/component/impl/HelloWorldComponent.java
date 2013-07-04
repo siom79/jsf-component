@@ -24,7 +24,7 @@ public class HelloWorldComponent extends UIOutput {
 	}
 
 	@Override
-	public void encodeBegin(FacesContext context) throws IOException {
+	public void encodeEnd(FacesContext context) throws IOException {
 		ResponseWriter writer = context.getResponseWriter();
 		writer.startElement("span", this);
 		writer.writeAttribute("class", "helloWorldClass", "");
@@ -33,7 +33,7 @@ public class HelloWorldComponent extends UIOutput {
 	}
 
 	public String getFirstName() {
-		return (String) getStateHelper().eval(PropertyKeys.firstName, "???firstName???");
+		return (String) getStateHelper().eval(PropertyKeys.firstName);
 	}
 
 	public void setFirstName(String firstName) {
@@ -41,7 +41,7 @@ public class HelloWorldComponent extends UIOutput {
 	}
 
 	public String getLastName() {
-		return (String) getStateHelper().eval(PropertyKeys.lastName, "???lastName???");
+		return (String) getStateHelper().eval(PropertyKeys.lastName);
 	}
 
 	public void setLastName(String lastName) {

@@ -7,4 +7,10 @@
 			<component-type>HelloWorld</component-type>
 		</component>
 	</tag>
+	<tag>
+		<tag-name>chart</tag-name>
+		<component>
+			<component-type>Chart</component-type>
+		</component>
+	</tag>
 </facelet-taglib>
