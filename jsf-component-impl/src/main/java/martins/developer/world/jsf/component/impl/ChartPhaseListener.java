@@ -30,7 +30,7 @@ public class ChartPhaseListener implements PhaseListener {
 		}
 		String mdwChartComponent = requestParameter.get(ChartComponent.MDW_CHART_COMPONENT);
 		if (mdwChartComponent != null) {
-			renderResponse(facesContext);
+			//renderResponse(facesContext);
 		}
 	}
 

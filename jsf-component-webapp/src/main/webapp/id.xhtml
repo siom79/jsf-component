@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:mdw="http://martinsdeveloperworld.wordpress.com">
+<h:head>
+    <title>Id</title>
+</h:head>
+<h:body>
+    <h:form id="idForm">
+        <h:messages style="color:red;margin:8px;" />
+        <h:inputHidden id="id" value="#{idBackingBean.id}"/>
+        <h:outputText value="#{idBackingBean.id}"/>
+        <h:commandButton value="Submit" action="#{idBackingBean.onSubmit()}"/>
+    </h:form>
+</h:body>
+</html>

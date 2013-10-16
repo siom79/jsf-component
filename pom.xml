@@ -56,5 +56,6 @@
 	<modules>
 		<module>jsf-component-webapp</module>
 		<module>jsf-component-impl</module>
-	</modules>
+        <module>jsf-component-ejb</module>
+    </modules>
 </project>

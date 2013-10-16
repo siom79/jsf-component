@@ -1,15 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:mdw="http://martinsdeveloperworld.wordpress.com">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:mdw="http://martinsdeveloperworld.wordpress.com">
 <h:head>
-<title>Hello JSF 2!</title>
+    <title>Hello JSF 2!</title>
 </h:head>
 <h:body>
-	<h2>Hello World!</h2>
-	<mdw:helloWorld firstName="#{helloWorldBackingBean.firstName}" lastName="Developer"/>
-	<mdw:chart type="bar"/>
+    <h2>Hello World!</h2>
+    <mdw:helloWorld firstName="#{helloWorldBackingBean.firstName}" lastName="Developer"/>
+
+    <mdw:ejbComponent statefulEjb="#{helloWorldBackingBean.statefulEjb}"/>
+    <mdw:ejbComponent statefulEjb="#{helloWorldBackingBean.statefulEjb}"/>
+    <mdw:ejbComponent statefulEjb="#{helloWorldBackingBean.statefulEjb}"/>
+    <mdw:ejbComponent statefulEjb="#{helloWorldBackingBean.statefulEjb}"/>
+    <mdw:ejbComponent statefulEjb="#{helloWorldBackingBean.statefulEjb}"/>
+
 </h:body>
 </html>
